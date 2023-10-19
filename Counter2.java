@@ -16,7 +16,7 @@ public class Counter2 extends Actor
     public Counter2(String prefix)
     {
         background = getImage();
-        value = 5;
+        value = 10;
         target = 5;
         this.prefix = prefix;
         updateImage();

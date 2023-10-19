@@ -4,7 +4,7 @@ public abstract class Obstacle extends Actor
 {
     abstract void createnew();
     abstract void maju();
-    
+
     void eated(){
         createnew();
         getWorld().removeObject(this);

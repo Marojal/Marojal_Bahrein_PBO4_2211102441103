@@ -7,7 +7,7 @@ public abstract class Food extends Actor
     
     void eaten(){
         Counter.add(1);
-        
+        Greenfoot.playSound("score.wav");
         createnew();
         getWorld().removeObject(this);
     }

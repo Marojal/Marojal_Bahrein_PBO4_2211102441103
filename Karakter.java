@@ -2,11 +2,10 @@ import greenfoot.*;
 
 public class Karakter extends Actor
 {
-    int count=0;
+    int count = 0;
     
-    void eated(){
+    void eaten(){
         Counter.add(1);
-        
         getWorld().removeObject(this);
     }
     public void act() 
@@ -19,7 +18,8 @@ public class Karakter extends Actor
        }
        if(isTouching(Obstacle.class)){
            Counter2.add(-1);
-           eated();
+           Greenfoot.playSound("score.wav");
+           eaten();
        }
        if(Counter2.value==0){
            Greenfoot.delay(1);

@@ -16,8 +16,8 @@ public class MyWorld extends World
         addObject(food1,12,54);
         Food2 food2 = new Food2();
         addObject(food2,98,210);
-        ExtraLive extralive = new ExtraLive();
-        addObject(extralive,232,338);
+        Live lv = new Live();
+        addObject(lv,232,338);
         Obstacle1 obstacle1 = new Obstacle1();
         addObject(obstacle1,15,375);
         Obstacle2 obstacle2 = new Obstacle2();
